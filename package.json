@@ -1,0 +1,28 @@
+{
+  "name": "powerballoon",
+  "version": "1.0.0",
+  "description": "Windows balloon notification using PowerShell for NodeJS, electron or NW.js.",
+  "main": "balloon.js",
+  "scripts": {
+    "start": "node balloon.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xan105/node-powerballoon.git"
+  },
+  "keywords": [
+    "balloon",
+    "notification",
+    "windows",
+    "powershell",
+    "node",
+    "electron",
+    "nw.js"
+  ],
+  "author": "Anthony Beaumont",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xan105/node-powerballoon/issues"
+  },
+  "homepage": "https://github.com/xan105/node-powerballoon#readme"
+}
