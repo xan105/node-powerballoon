@@ -1,6 +1,6 @@
 {
   "name": "powerballoon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Windows balloon notification using PowerShell for NodeJS, electron or NW.js.",
   "main": "balloon.js",
   "scripts": {
