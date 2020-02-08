@@ -2,7 +2,9 @@ About
 =====
 
 Windows balloon notification using PowerShell for NodeJS, electron or NW.js.<br />
-Doesn't use any native module. Everything is done through PowerShell.
+Doesn't use any native module. Everything is done through PowerShell.<br />
+
+Looking for Windows toast notification ? [node-powertoast](https://github.com/xan105/node-powertoast)
 
 Example
 =======
@@ -58,7 +60,7 @@ Options
 
 - **showTime** 
 
-  balloon duration in ms.
+  balloon duration in ms.<br />
   _default to 7000._
   
   ⚠️ Please note that Windows can dismiss the pop-up before the timeout expires.
