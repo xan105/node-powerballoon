@@ -8,9 +8,16 @@ Looking for Windows toast notification ? [node-powertoast](https://github.com/xa
 
 Example
 =======
-<p align="center">
-<img src="https://github.com/xan105/node-powerballoon/raw/master/screenshot/win10.png">
-</p>
+<table>
+<tr>
+<td align="left"><img src="https://github.com/xan105/node-powerballoon/raw/master/screenshot/win7.png"></td>
+<td align="left"><img src="https://github.com/xan105/node-powerballoon/raw/master/screenshot/win10.png"></td>
+</tr>
+<tr>
+<td align="center">Windows 7</td>
+<td align="center">Windows 10</td>
+</tr>
+</table>
 
 ```js 
 //Sending a simple balloon notification
