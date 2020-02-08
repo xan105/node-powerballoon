@@ -7,7 +7,7 @@ Doesn't use any native module. Everything is done through PowerShell.
 Example
 =======
 <p align="center">
-<img src="https://github.com/xan105/node-powertoast/raw/master/screenshot/win10.png">
+<img src="https://github.com/xan105/node-powerballoon/raw/master/screenshot/win10.png">
 </p>
 
 ```js 
@@ -39,13 +39,13 @@ Options
 - **message**
 
   The content message of your notification.
-  This can not be empty !
+  This can not be empty !<br />
   Thus _default to "Hello World !"_
 
 - **ico**
 
-  Path to the icon shown in the systray.
-  Path can target either an .ico file or an .exe.
+  Path to the icon shown in the systray.<br />
+  Path can target either an .ico file or an .exe.<br />
   _default to the PowerShell executable icon._
 
 - **type**
