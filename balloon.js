@@ -21,16 +21,16 @@ module.exports = async (option = {}) => {
     let options = {
       title: option.title || "",
       message: option.message || "Hello World !", //Can not be empty
-      ico: option.ico || null, 
+      ico: (option.ico) ? path.resolve(option.ico) : null,
       type: option.type || 0, //Info, Warning, Error
       showTime: option.showTime || 7000
     };
-       
+
     let template = `(Get-Process -Id $pid).PriorityClass = 'High'`+ os.EOL +
                    `Add-Type -AssemblyName System.Windows.Forms` + os.EOL +
                    `$balloon = New-Object System.Windows.Forms.NotifyIcon` + os.EOL;
                     
-                   if (options.ico) 
+                   if (options.ico && await exists(options.ico)) 
                    {
                      if (path.parse(options.ico).ext === '.exe') {
                         template += `$balloon.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon("${options.ico}")` + os.EOL;
@@ -73,4 +73,10 @@ module.exports = async (option = {}) => {
         throw err;
      });
   }
+}
+
+function exists (target) {
+   return new Promise((resolve) => {
+      fs.promises.access(target, fs.constants.F_OK).then(() => resolve(true)).catch(() => resolve(false));
+   });
 }
