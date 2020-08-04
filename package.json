@@ -1,14 +1,21 @@
 {
   "name": "powerballoon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Windows balloon notification using PowerShell for NodeJS, electron or NW.js.",
-  "main": "balloon.js",
-  "scripts": {
-    "start": "node balloon.js"
+  "type": "module",
+  "main": "balloon.cjs",
+  "exports": {
+    "import": "./esm.mjs",
+    "require": "./balloon.cjs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xan105/node-powerballoon.git"
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "node": ">=0.12"
+  },
+  "scripts": {
+    "lint": "npx eslint --ignore-path .gitignore ./**/*.{cjs,mjs}"
   },
   "keywords": [
     "balloon",
@@ -19,10 +26,21 @@
     "electron",
     "nw.js"
   ],
-  "author": "Anthony Beaumont",
+  "author": {
+    "name": "Anthony Beaumont",
+    "email": "dev.xan105@outlook.be",
+    "url": "https://xan105.com/"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xan105/node-powerballoon.git"
+  },
   "bugs": {
     "url": "https://github.com/xan105/node-powerballoon/issues"
   },
-  "homepage": "https://github.com/xan105/node-powerballoon#readme"
+  "homepage": "https://github.com/xan105/node-powerballoon#readme",
+  "devDependencies": {
+    "eslint": "^7.6.0"
+  }
 }
