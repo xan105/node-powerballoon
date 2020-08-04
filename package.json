@@ -1,7 +1,7 @@
 {
   "name": "powerballoon",
-  "version": "1.0.3",
-  "description": "Windows balloon notification using PowerShell for NodeJS, electron or NW.js.",
+  "version": "1.0.4",
+  "description": "Windows balloon notification using PowerShell.",
   "type": "module",
   "main": "balloon.cjs",
   "exports": {
@@ -21,10 +21,7 @@
     "balloon",
     "notification",
     "windows",
-    "powershell",
-    "node",
-    "electron",
-    "nw.js"
+    "powershell"
   ],
   "author": {
     "name": "Anthony Beaumont",
