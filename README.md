@@ -1,7 +1,7 @@
 About
 =====
 
-Windows balloon notification using PowerShell for NodeJS, electron or NW.js.<br />
+Windows balloon notification using PowerShell.<br />
 Doesn't use any native module. Everything is done through PowerShell.<br />
 
 Looking for Windows toast notification ? [node-powertoast](https://github.com/xan105/node-powertoast)
