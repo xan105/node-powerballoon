@@ -87,7 +87,7 @@ module.exports = async (option = {}) => {
     const bom = "\ufeff";
     await fs.promises.writeFile(script, bom+template, "utf8");
 
-    const output = await util.promisify(exec)(`powershell -ExecutionPolicy Bypass -File "${script}"`,{windowsHide: true});
+    const output = await util.promisify(exec)(`powershell -NoProfile -ExecutionPolicy Bypass -File "${script}"`,{windowsHide: true});
     if (output.stderr) throw output.stderr;
       
     await fs.promises.unlink(script).catch(()=>{});
