@@ -1,6 +1,6 @@
 'use strict';
 
-const balloon = require('../balloon.cjs');
+const balloon = require('../lib/balloon.cjs');
 
 balloon({
   title: "NPM",

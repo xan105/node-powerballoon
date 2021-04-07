@@ -1,12 +1,12 @@
 {
   "name": "powerballoon",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Windows balloon notification using PowerShell.",
   "type": "module",
-  "main": "balloon.cjs",
+  "main": "./lib/balloon.cjs",
   "exports": {
-    "import": "./esm.mjs",
-    "require": "./balloon.cjs"
+    "import": "./lib/esm.mjs",
+    "require": "./lib/balloon.cjs"
   },
   "os": [
     "win32"
