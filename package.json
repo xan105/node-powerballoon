@@ -1,21 +1,15 @@
 {
   "name": "powerballoon",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Windows balloon notification using PowerShell.",
   "type": "module",
-  "main": "./lib/balloon.cjs",
-  "exports": {
-    "import": "./lib/esm.mjs",
-    "require": "./lib/balloon.cjs"
-  },
-  "os": [
-    "win32"
-  ],
+  "exports": "./lib/index.js",
+  "types": "./types/index.d.ts",
   "engines": {
-    "node": ">=0.12"
+    "node": ">=16.0.0"
   },
   "scripts": {
-    "lint": "npx eslint --ignore-path .gitignore ./**/*.{cjs,mjs}"
+    "lint": "npx eslint --ignore-path .gitignore ./**/*.{js,mjs}"
   },
   "keywords": [
     "balloon",
@@ -38,6 +32,11 @@
   },
   "homepage": "https://github.com/xan105/node-powerballoon#readme",
   "devDependencies": {
-    "eslint": "^7.6.0"
+    "eslint": "^8.10.0"
+  },
+  "dependencies": {
+    "@xan105/error": "^1.1.1",
+    "@xan105/fs": "^2.0.3",
+    "@xan105/is": "^2.2.0"
   }
 }

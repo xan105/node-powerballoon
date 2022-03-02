@@ -21,7 +21,7 @@ Example
 
 ```js 
 //Sending a simple balloon notification
-const balloon = require('powerballoon');
+import balloon from 'powerballoon';
 
 balloon({
   title: "NPM",
@@ -35,11 +35,19 @@ balloon({
 Installation
 ============
 
-`npm install powerballoon`
+```
+npm install powerballoon
+```
 
+API
+===
 
-Options
-=======
+⚠️ This module is only available as an ECMAScript module (ESM) starting with version 2.0.0.<br />
+Previous version(s) are CommonJS (CJS) with an ESM wrapper.
+
+## Default export
+
+#### `(option?: obj): Promise<void>`
 
 - **title**
   
@@ -67,8 +75,8 @@ Options
 
 - **showTime** 
 
-  balloon duration in ms.<br />
-  _default to 7000._
+  balloon duration in sec.<br />
+  _default to 7._
   
   ⚠️ Please note that Windows can dismiss the pop-up before the timeout expires.
 
