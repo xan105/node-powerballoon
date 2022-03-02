@@ -19,15 +19,29 @@ Example
 </tr>
 </table>
 
+Sending a simple balloon notification
+
 ```js 
-//Sending a simple balloon notification
 import balloon from 'powerballoon';
 
 balloon({
   title: "NPM",
   message: "Installed.",
-  ico: "C:\\Program Files\\nodejs\\node.exe"
-}).catch((err) => { 
+  ico: "C:\\Program Files\\nodejs\\node.exe",
+  showTime: 7,
+  callback: {
+    onActivated: ()=>{
+      console.log("clicked");
+    },
+    onDismissed: ()=>{
+      console.log("closed");
+    }
+  }
+})
+.then(()=>{
+  console.log("done");
+})
+.catch((err) => { 
   console.error(err);
 });
 ```
@@ -79,6 +93,11 @@ Previous version(s) are CommonJS (CJS) with an ESM wrapper.
   _default to 7._
   
   ⚠️ Please note that Windows can dismiss the pop-up before the timeout expires.
+  
+- **callback**
+
+  onActivated() : When the balloon tooltip is clicked.<br/>
+  onDismissed() : When the balloon tooltip is closed.
 
 Common Issues
 =============
