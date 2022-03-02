@@ -81,10 +81,11 @@ Previous version(s) are CommonJS (CJS) with an ESM wrapper.
 
 - **type**
 
-  + 0 : Info
-  + 1 : Warning
-  + 2 : Error
+  + 0 : Info (ℹ️)
+  + 1 : Warning (⚠️)
+  + 2 : Error (❌)
   
+  This change the icon displayed within the tooltip.<br />
   _default to 'Info'_
 
 - **showTime** 
@@ -98,6 +99,8 @@ Previous version(s) are CommonJS (CJS) with an ESM wrapper.
 
   onActivated() : When the balloon tooltip is clicked.<br/>
   onDismissed() : When the balloon tooltip is closed.
+  
+NB: Please note that since v2.0.0. The promise will resolve when the balloon tooltip is done because we need to wait and then clean up the systray.
 
 Common Issues
 =============
