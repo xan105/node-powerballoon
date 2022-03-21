@@ -5,6 +5,7 @@ balloon({
   message: "Installed.",
   ico: "C:\\Program Files\\nodejs\\node.exe",
   showTime: 7,
+  type: 1,
   callback: {
     onActivated: ()=>{
       console.log("clicked");

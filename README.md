@@ -81,12 +81,12 @@ Previous version(s) are CommonJS (CJS) with an ESM wrapper.
 
 - **type**
 
-  + 0 : Info (ℹ️)
-  + 1 : Warning (⚠️)
-  + 2 : Error (❌)
+  + 0 (ℹ️ Info)
+  + 1 (⚠️ Warning)
+  + 2 (❌ Error)
   
   This change the icon displayed within the tooltip.<br />
-  _default to 'Info'_
+  _default to '0 (Info)'_
 
 - **showTime** 
 
