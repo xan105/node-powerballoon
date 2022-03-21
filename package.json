@@ -1,6 +1,6 @@
 {
   "name": "powerballoon",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Windows balloon notification using PowerShell.",
   "type": "module",
   "exports": "./lib/index.js",
@@ -35,8 +35,8 @@
     "eslint": "^8.10.0"
   },
   "dependencies": {
-    "@xan105/error": "^1.1.1",
-    "@xan105/fs": "^2.0.3",
-    "@xan105/is": "^2.2.0"
+    "@xan105/error": "^1.2.0",
+    "@xan105/fs": "^2.0.4",
+    "@xan105/is": "^2.4.0"
   }
 }
